@@ -1,0 +1,22 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+    border-bottom: 3px solid rgb(165, 160, 17);
+    background-color: rgb(93, 61, 82);
+}
+
+.title{
+    color:rgb(17, 165, 89);
+    font-size: 3rem;
+    margin: 0;
+    font-family: 'Gregoria', serif;
+}
+
+.logo{
+    height: auto;
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 20%;
+}

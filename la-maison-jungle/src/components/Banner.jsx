@@ -3,8 +3,19 @@
  * Le composant Banner retourne un message codé en HTML <h1>Bienvenue à la maison Jungle</h1>
  */
 
+//j'importe le fichier Banner.css appliquer au composant
+import styles from '../styles/Banner.module.css'
+
+import logo from '../assets/fleur.jpg'
+
 const Banner = () => {
-    return <h1>Bienvenue à la maison Jungle</h1>
+    const title = "Bienvenue à la maison Jungle"
+    return (
+        <div className={styles.banner}>
+            <img src={logo} alt="logo de la maison" className={styles.logo}/>
+            <h1 className={styles.title}>{title}</h1>
+        </div>
+    )
 };
 
 /**
