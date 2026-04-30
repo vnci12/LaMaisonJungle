@@ -1,0 +1,19 @@
+.Imgplantlist{
+    list-style-type :none;
+    padding: 32px;
+    display: flex;
+    max-width: 800;
+}
+
+.Imgplantitems{
+    border: solid 2px rgb(229, 14, 14);
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}

@@ -9,6 +9,7 @@ import Banner from './components/Banner'
 
 //j'importe le composant Cart.jsx
 import Cart from './components/Cart'
+import ShoppingList from './components/ShoppingList'
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
       <Banner />
 
       <Cart />
+
+      <ShoppingList />
     </>
   )
 }
