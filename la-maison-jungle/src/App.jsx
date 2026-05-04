@@ -9,14 +9,29 @@ import Banner from './components/Banner'
 
 //j'importe le composant Cart.jsx
 import Cart from './components/Cart'
+
 import ShoppingList from './components/ShoppingList'
 
-function App() {
+import logo from './assets/fleur.jpg'
 
+import styles from './styles/Banner.module.css'
+
+
+function App() {
+  const title = "Bienvenue à la maison Jungle"
+
+  /**
+   * Lorsque j'appelle le composant <Banner>, j'y insère deux enfants <h1>
+   */
   return (
 
     <>
-      <Banner />
+      <Banner>
+        <img src={logo} alt="logo de la maison" className={styles.logo}/>
+
+        <h1 className={styles.title}>{title}</h1>
+        
+      </Banner>
 
       <Cart />
 

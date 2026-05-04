@@ -8,12 +8,22 @@ import styles from '../styles/Banner.module.css'
 
 import logo from '../assets/fleur.jpg'
 
-const Banner = () => {
+/**
+ * @param {*} param0
+ * @returns 
+ * Le composant Banner.jsx prend comme propos ses enfants déclarés dans le composant App.jsx
+ * j'utilise {children} pour faire appel aux props venant du coposant <Banner></Banner> déclarer dans le composant App.jsx
+ * Le composant Banner.jsx retourne un <div>
+ */
+
+
+const Banner = ({children}) => {
     const title = "Bienvenue à la maison Jungle"
     return (
         <div className={styles.banner}>
-            <img src={logo} alt="logo de la maison" className={styles.logo}/>
-            <h1 className={styles.title}>{title}</h1>
+            {children}
+
+
         </div>
     )
 };

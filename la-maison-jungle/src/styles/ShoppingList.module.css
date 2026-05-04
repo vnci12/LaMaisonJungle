@@ -1,11 +1,12 @@
-.Imgplantlist{
+.lmjPlantlist{
     list-style-type :none;
     padding: 32px;
     display: flex;
     max-width: 800;
+    background-color: rgb(23, 4, 81);
 }
 
-.Imgplantitems{
+.lmjPlantitems{
     border: solid 2px rgb(229, 14, 14);
     border-radius: 10px;
     height: 150px;
@@ -16,4 +17,14 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+}
+
+.lmjSales{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-weight: 400;
+    color: bisque;
+    padding: 5px 10px;
+    background-color:rgb(239, 143, 16);
 }
