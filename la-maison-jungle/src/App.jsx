@@ -16,6 +16,12 @@ import logo from './assets/fleur.jpg'
 
 import styles from './styles/Banner.module.css'
 
+import PlantItem from './components/PlantItem'
+
+import QuestionForm from './components/QuestionForm'
+import Footer from './components/Footer'
+
+
 
 function App() {
   const title = "Bienvenue à la maison Jungle"
@@ -36,6 +42,12 @@ function App() {
       <Cart />
 
       <ShoppingList />
+
+      <PlantItem />
+
+      <QuestionForm />
+
+      <Footer />
     </>
   )
 }

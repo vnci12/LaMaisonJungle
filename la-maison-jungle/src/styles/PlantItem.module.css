@@ -1,0 +1,16 @@
+/*styles pour chaque palnte*/
+.lmjPlantItems{
+    margin: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+/*style pour l'image de la plante*/
+.lmjPlantItemCover {
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+}

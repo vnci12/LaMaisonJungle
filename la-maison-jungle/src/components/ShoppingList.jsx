@@ -4,8 +4,14 @@
 
 import styles from  '../styles/ShoppingList.module.css'
 
-
 import CareScale from './CareScale'
+
+import monstera from '../assets/monstera-unsplash.jpg'
+
+import PlantItem from './PlantItem'
+
+import QuestionForm from './QuestionForm'
+
 
 
 const plantList = [
@@ -16,7 +22,8 @@ const plantList = [
         isBestSale: true,
         isSpecialOffer: 'non',
         water: 2,
-        light: 3
+        light: 3,
+        cover: monstera
     },
     {
         name: 'fiscus lyrata',
@@ -25,7 +32,8 @@ const plantList = [
         isBestSale: false,
         isSpecialOffer: 'oui',
         water: 4,
-        light: 2
+        light: 2,
+        cover: monstera
     },
     {
         name: 'pothos argenté',
@@ -34,7 +42,8 @@ const plantList = [
         isBestSale: false,
         isSpecialOffer: 'oui',
         water: 1,
-        light: 2
+        light: 2,
+        cover: monstera
     },
     {
         name: 'yucco',
@@ -43,7 +52,8 @@ const plantList = [
         isBestSale: false,
         isSpecialOffer: 'oui',
         water: 5,
-        light: 3
+        light: 3,
+        cover: monstera
     },
     {
         name: 'palmier',
@@ -52,7 +62,8 @@ const plantList = [
         isBestSale: false,
         isSpecialOffer: 'oui',
         water: 4,
-        light: 5
+        light: 5,
+        cover: monstera
     },
     {
         name: 'mawa fulera',
@@ -60,25 +71,27 @@ const plantList = [
         id: '6',
         isBestSale: true,
         isSpecialOffer: 'non',
-        water: true,
-        light: true
+        water: 3,
+        light: 2,
+        cover: monstera
     },
 
 ];
 
 const ShoppingList = () => {
+
     return (
         <ul className={styles.lmjPlantlist}>
             {
-                plantList.map((plant, index) => (
-                    <li key={plant.id} className={styles.lmjPlantitems}>
-                        {plant.isBestSale ? <span>+++❤️</span> : <span>---😣</span>}
-                        {plant.name} <br></br>
-                        {plant.isSpecialOffer ? <span className= {styles.lmjSales}>Solde</span> : <span></span>}
-
-                        <CareScale careType="light" scaleValue = {plant.light}></CareScale>
-                        <CareScale careType="water" scaleValue={plant.water}></CareScale>
-                    </li>
+                plantList.map(({id, name, cover, water, light}) => (
+                    <PlantItem
+                        key= {id}
+                        id= {id}
+                        name= {name}
+                        cover= {cover}
+                        water= {water}
+                        light= {light}
+                    />
                 )
             )
             }
